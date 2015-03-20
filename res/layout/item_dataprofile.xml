@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:baselineAligned="false" >
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/slightly_round_corners"
+        android:layout_marginRight="10dp"/>
+   
+	  	<TextView
+	  	    android:id="@+id/id"
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_alignParentLeft="true"
+	  	    android:layout_marginLeft="10dp"
+	  	    android:padding="3dp"
+	  	    android:text="Ratio"
+	  	    android:textSize="17sp"
+	  	    android:typeface="serif" />
+	  	
+	  	<TextView
+	  	    android:id="@+id/points"
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_alignParentRight="true"
+	  	    android:layout_marginRight="10dp"
+	  	    android:padding="3dp"
+	  	    android:text="5:5"
+	  	    android:textSize="17sp"
+	  	    android:typeface="serif" />
+
+</RelativeLayout>

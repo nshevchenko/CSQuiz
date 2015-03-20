@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    tools:context="${packageName}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/timer"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_button"
+            android:text="0:30"
+            android:textSize="21sp" />
+
+   		<TextView
+        	android:id="@+id/title"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_horizontal"
+        	android:text="question here ... ?"
+        	android:textSize="16sp"
+        	android:typeface="serif" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layoutQuestionToColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="0.32"
+        android:background="@drawable/round_corners"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+    	
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.8"
+            android:gravity="center_horizontal"
+            android:text="question here ... ?"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:id="@+id/expPointsView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1.0" >
+
+   	    <RelativeLayout
+   	        android:layout_width="0dp"
+   	        android:layout_height="wrap_content"
+   	        android:layout_weight="0.22"
+   	        tools:ignore="NestedWeights" >
+
+   			<Button
+   			    android:id="@+id/plusTen"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="match_parent"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_gravity="left|center_vertical"
+   			    android:layout_margin="5dp"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:text="+10"
+   			    android:textStyle="bold" />
+			
+		</RelativeLayout>
+
+		<RelativeLayout
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.22"
+		    tools:ignore="NestedWeights" >
+   			
+   			<Button
+   			    android:id="@+id/plusFive"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="fill_parent"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_gravity="center"
+   			    android:layout_margin="5dp"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:text="+5"
+   			    android:textStyle="bold" />
+   			
+   		</RelativeLayout>	
+
+		<RelativeLayout
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.22"
+		    tools:ignore="NestedWeights" >
+        		
+   			<Button
+   			    android:id="@+id/plusOne"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="fill_parent"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_gravity="right|center_vertical"
+   			    android:layout_margin="5dp"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:text="+1"
+   			    android:textStyle="bold" />
+
+		</RelativeLayout>   
+					
+		</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+   	    <RelativeLayout
+   	        android:layout_width="0dp"
+   	        android:layout_height="wrap_content"
+   	        android:layout_weight="0.2"
+   	        tools:ignore="NestedWeights" >
+
+   			<Button
+   			    android:id="@+id/fiftyfifty"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="match_parent"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_gravity="left|center_vertical"
+   			    android:layout_margin="5dp"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:textStyle="bold" />
+
+			<ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:layout_margin="5dp"
+			    android:adjustViewBounds="true"
+			    android:scaleType="centerInside"
+			    android:src="@drawable/fiftyfifty" />
+			
+		</RelativeLayout>
+
+		<RelativeLayout
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.2"
+		    tools:ignore="NestedWeights" >
+   			
+   			<Button
+   			    android:id="@+id/deleteOne"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="fill_parent"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_gravity="center"
+   			    android:layout_margin="5dp"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:textStyle="bold" />
+   			
+   			<ImageView
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_margin="5dp"
+   			    android:scaleType="centerInside"
+   			    android:src="@drawable/delete_one" />
+   			
+   		</RelativeLayout>	
+
+		<RelativeLayout
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.2"
+		    tools:ignore="NestedWeights" >
+        		
+   			<Button
+   			    android:id="@+id/saveQuestion"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="fill_parent"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_gravity="right|center_vertical"
+   			    android:layout_margin="5dp"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:textStyle="bold" />
+
+			<ImageView
+			    android:id="@+id/saveQuestionImg"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:layout_margin="5dp"
+			    android:scaleType="centerInside"
+			    android:src="@drawable/save_question_icon_on" />
+
+		</RelativeLayout>   
+		
+		<RelativeLayout
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.2"
+		    tools:ignore="NestedWeights" >
+        		
+   			<Button
+   			    android:id="@+id/skip"
+   			    android:layout_width="match_parent"
+   			    android:layout_height="fill_parent"
+   			    android:layout_centerHorizontal="true"
+   			    android:layout_centerVertical="true"
+   			    android:layout_gravity="right|center_vertical"
+   			    android:layout_margin="5dp"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:textStyle="bold" />
+
+			<ImageView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:layout_margin="5dp"
+			    android:scaleType="centerInside"
+			    android:src="@drawable/skip_icon" />
+		</RelativeLayout> 
+					
+	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1" >
+        
+    	<Button
+    	    android:id="@+id/answer1"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/slightly_round_corners"
+    	    android:padding="10dp"
+    	    android:text="Nikolai"
+    	    android:textSize="16sp"
+    	    android:typeface="serif" />
+	
+	    <Button
+	        android:id="@+id/answer3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/slightly_round_corners"
+	        android:padding="10dp"
+	        android:text="Inheritance Encapsulation"
+	        android:textSize="16sp"
+	        android:typeface="serif" />
+
+    	<Button
+    	    android:id="@+id/answer2"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_horizontal"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/slightly_round_corners"
+    	    android:padding="10dp"
+    	    android:text="Class SuperClass"
+    	    android:textSize="16sp"
+    	    android:typeface="serif" />
+	
+	    <Button
+	        android:id="@+id/answer4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/slightly_round_corners"
+	        android:padding="10dp"
+	        android:text="Subclass of an object which entirely defines the system"
+	        android:textSize="16sp"
+	        android:typeface="serif" />
+
+  	</LinearLayout>
+</LinearLayout>

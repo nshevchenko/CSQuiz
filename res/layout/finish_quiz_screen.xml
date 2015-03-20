@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="0dp"
+    android:background="#E8E8E8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11" >
+
+    	<Button
+    	    android:id="@+id/title"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:layout_centerVertical="true"
+    	    android:layout_gravity="center_vertical"
+    	    android:layout_margin="5dp"
+    	    android:background="@drawable/slightly_round_corners"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:paddingLeft="30dp"
+    	    android:text="Results"
+    	    android:textSize="25sp" />
+
+    	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.18"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1" >
+    	
+		<TextView
+		    android:id="@+id/score"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="20dp"
+		    android:text="mark"
+		    android:textSize="18sp"
+		    android:typeface="serif" />
+		
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Your Answers:"
+            android:typeface="monospace" />
+	</LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_gravity="center_vertical"
+         android:layout_margin="15dp"
+         android:layout_weight="0.56"
+         android:background="@drawable/stroke_slightly_round_corners"
+         android:gravity="center_horizontal"
+         android:orientation="horizontal"
+         android:weightSum="1" >
+        
+        <ListView
+            android:id="@+id/listItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/slightly_round_corners"
+            android:dividerHeight="5dp" 
+            android:divider="@null"
+            android:smoothScrollbar="true"
+            android:scrollbars="vertical"
+           > 
+			
+		</ListView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.15"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/slightly_round_corners"
+            android:padding="10dp"
+            android:text="Menu"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/restartQuizButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/slightly_round_corners"
+            android:padding="10dp"
+            android:text="Next Quiz"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

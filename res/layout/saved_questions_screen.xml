@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="0dp"
+    android:background="#E8E8E8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11" >
+
+    	<Button
+    	    android:id="@+id/title"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:layout_centerVertical="true"
+    	    android:layout_gravity="center_vertical"
+    	    android:layout_margin="5dp"
+    	    android:background="@drawable/slightly_round_corners"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:paddingLeft="30dp"
+    	    android:text="Saved Questions"
+    	    android:textSize="25sp" />
+
+    	<Button
+    	    android:id="@+id/back"
+    	    android:layout_width="45dp"
+    	    android:layout_height="45dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_margin="5dp"
+    	    android:layout_marginLeft="0dp"
+    	    android:background="@drawable/round_button"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:paddingLeft="0dp"
+    	    android:text="&lt;"
+    	    android:textSize="25sp" />
+
+    	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="0.9"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1" >
+	
+        <TextView
+            android:id="@+id/tutorialText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="During a quiz, if you press :"
+            android:textSize="18sp" />
+        
+        <ImageView
+            	android:id="@+id/tutorialImg1"
+			    android:layout_width="50dp"
+			    android:layout_height="50dp"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:layout_margin="20dp"
+			    android:scaleType="centerInside"
+			    android:src="@drawable/saved_questions" />
+        
+         <TextView
+             android:id="@+id/tutorialText2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center_horizontal"
+             android:text="you will see the question here: (example)"
+             android:textSize="18sp" />
+		
+         <LinearLayout
+             android:id="@+id/exampleQuestionSaved"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="top"
+             android:layout_marginTop="30dp"
+             android:background="@drawable/slightly_round_corners"
+             android:gravity="top"
+             android:orientation="horizontal"
+             android:weightSum="1.0" >
+		
+    			<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/backbtnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+            
+            	<Button
+            	    android:focusable="false"
+					android:focusableInTouchMode="false"
+            	    android:id="@+id/backbtn"
+            	    android:layout_width="25dp"
+            	    android:layout_height="25dp"
+            	    android:layout_centerInParent="true"
+            	    android:adjustViewBounds="true"
+            	    android:background="@drawable/slightly_round_corners"
+            	    android:contentDescription="wiki button"
+            	    android:scaleType="centerCrop" />
+            
+            	<ImageView
+            	    android:id="@+id/backbtnimg"
+            	    android:layout_width="20dp"
+            	    android:layout_height="20dp"
+            	    android:layout_centerInParent="true"
+            	    android:adjustViewBounds="true"
+            	    android:contentDescription="wiki button"
+            	    android:padding="5dp"
+            	    android:scaleType="centerCrop"
+            	    android:src="@drawable/btn_close_normal" />
+
+           		</RelativeLayout> 
+
+            <TextView
+                android:id="@+id/path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="OOP > Basic Concept"
+                android:textColor="#555555"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            
+        </RelativeLayout>
+    	
+    	<TextView
+    	    android:id="@+id/question"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="Is my question cool, super cool?"
+    	    android:textSize="15sp"
+    	    android:typeface="serif" />
+
+    </LinearLayout>
+
+    	<LinearLayout
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_vertical"
+    	    android:layout_weight="0.3"
+    	    android:gravity="top"
+    	    android:orientation="horizontal"
+    	    android:weightSum="1.0" >
+		
+        <RelativeLayout
+            android:id="@+id/wikilayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center" >
+        		
+   			<Button
+   			    android:id="@+id/wiki"
+   			    android:layout_width="40dp"
+   			    android:layout_height="40dp"
+   			    android:layout_centerInParent="true"
+   			    android:layout_gravity="right|center_vertical"
+   			    android:background="@drawable/slightly_round_corners"
+   			    android:textStyle="bold" />
+
+			<ImageView
+			    android:id="@+id/wikiimg"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerInParent="true"
+			    android:adjustViewBounds="true"
+			    android:contentDescription="wiki button"
+			    android:padding="5dp"
+			    android:scaleType="centerInside"
+			    android:src="@drawable/wiki_icon" />
+
+		</RelativeLayout>   
+        
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/fb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/slightly_round_corners"
+                android:textStyle="bold" />
+
+			<ImageView
+			    android:id="@+id/fbimg"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerInParent="true"
+			    android:adjustViewBounds="true"
+			    android:contentDescription="fb Button"
+			    android:padding="5dp"
+			    android:scaleType="centerInside"
+			    android:src="@drawable/fb" />
+
+				</RelativeLayout>   
+        
+        
+    		</LinearLayout>
+		</LinearLayout>
+
+         <ListView
+             android:id="@+id/listItems"
+             android:layout_width="match_parent"
+             android:layout_height="fill_parent"
+             android:layout_margin="5dp"
+             android:divider="@null"
+             android:dividerHeight="5dp"
+             android:scrollbars="vertical"
+             android:smoothScrollbar="true" >
+         </ListView>
+
+    </LinearLayout>
+    
+</LinearLayout>

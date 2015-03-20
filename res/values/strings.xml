@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Techy Shit</string>
+    <string name="oopQuizSplash">Welcome!\n \nOOP QUIZ</string>
+	<string name="playButton">Test Me!</string>
+	<string name="leadBoardsButton">LeadBoards</string>
+	<string name="app_id">1501796096704156</string>
+	<string name="fb_connect_intro">Share your \nknowledge points \nwith your friends!</string>
+	<string name="login">Log in...</string>
+	<string name="fetching_friends">Getting your friends...</string>
+
+</resources>

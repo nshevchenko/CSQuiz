@@ -1,0 +1,216 @@
+<LinearLayout 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="0dp"
+    android:background="#E8E8E8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11" >
+
+    	<Button
+    	    android:id="@+id/title"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:layout_centerVertical="true"
+    	    android:layout_gravity="center_vertical"
+    	    android:background="@drawable/slightly_round_corners"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:paddingLeft="30dp"
+    	    android:text="Leaderboards"
+    	    android:textSize="25sp" />
+
+    	<Button
+    	    android:id="@+id/back"
+    	    android:layout_width="45dp"
+    	    android:layout_height="45dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_margin="5dp"
+    	    android:layout_marginLeft="0dp"
+    	    android:background="@drawable/round_button"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:paddingLeft="0dp"
+    	    android:text="&lt;"
+    	    android:textSize="25sp" />
+
+    	</RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/userInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.15"
+        android:background="@drawable/slightly_round_corners"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+		
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="left" >
+			
+			<com.facebook.widget.ProfilePictureView
+			    android:id="@+id/avatar"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_gravity="left"
+			    android:layout_margin="5dp"
+			    android:gravity="center_horizontal"
+			    android:scaleType="centerCrop"
+			    android:src="@drawable/user"
+			    facebook:preset_size="small" />
+
+		</RelativeLayout>
+		
+		<RelativeLayout
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.8"
+		    android:gravity="center_horizontal" >
+			
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="New User"
+                android:textSize="18sp" />
+           
+            <LinearLayout
+                android:id="@+id/laybuttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="1.0" >
+			
+  		    <Button
+  		        android:id="@+id/top1"
+  		        android:layout_width="0dp"
+  		        android:layout_height="wrap_content"
+  		        android:layout_gravity="top"
+  		        android:layout_marginRight="2dp"
+  		        android:layout_weight="0.33"
+  		        android:background="@drawable/slightly_round_corners"
+  		        android:padding="5dp"
+  		        android:text="OOP"
+  		        android:textSize="15sp"
+  		        android:textStyle="bold" />
+
+  		    <Button
+  		        android:id="@+id/top2"
+  		        android:layout_width="0dp"
+  		        android:layout_height="wrap_content"
+  		        android:layout_gravity="top"
+  		        android:layout_marginLeft="2dp"
+  		        android:layout_marginRight="2dp"
+  		        android:layout_weight="0.33"
+  		        android:background="@drawable/slightly_round_corners"
+  		        android:padding="5dp"
+  		        android:text="C++"
+  		        android:textSize="15sp"
+  		        android:textStyle="bold" />
+  		    
+  		    <Button
+  		        android:id="@+id/top3"
+  		        android:layout_width="0dp"
+  		        android:layout_height="wrap_content"
+  		        android:layout_gravity="top"
+  		        android:layout_marginLeft="2dp"
+  		        android:layout_weight="0.33"
+  		        android:background="@drawable/slightly_round_corners"
+  		        android:padding="5dp"
+  		        android:text="Java"
+  		        android:textSize="15sp"
+  		        android:textStyle="bold" />
+
+				</LinearLayout>
+			</RelativeLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shareScoreRequest"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="0.6"
+        android:background="@drawable/stroke_slightly_round_corners"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/shareDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:text="Share your knowledge scores with your friends"
+            android:textSize="18sp" />
+        
+    	<com.facebook.widget.LoginButton
+    	    android:id="@+id/authButton"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_gravity="center_horizontal"
+    	    android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/showFriendScore"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_gravity="center_vertical"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="10dp"
+         android:layout_weight="0.65"
+         android:background="@drawable/stroke_slightly_round_corners"
+         android:gravity="center_horizontal"
+         android:orientation="vertical"
+         android:weightSum="1" >
+
+        <ListView
+            android:id="@+id/listProfiles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@drawable/slightly_round_corners"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:scrollbars="vertical"
+            android:smoothScrollbar="true" >
+			
+		</ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

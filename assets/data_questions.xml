@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+	STRUCTURE : 
+	questions 
+		quizzes
+
+-->
+
+<data>
+	<category title="OOP">
+	    <quiz title="Basic Theory">
+			<quest>     
+				<question>OOP stands for:</question>
+				<answers>Object Oriented Programming ;Dunno ;JAVA ;nothing</answers>
+				<correctAnswer>0</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Object-oriented_programming</link>
+			</quest>
+			<quest>     
+				<question>Which is an OOP principle?</question>
+				<answers>Plagiarism;Inheritance;Development;Agile</answers>
+				<correctAnswer>1</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Object-oriented_programming</link>
+			</quest>
+			<quest>     
+				<question>What is the native android programming language?</question>
+				<answers>C++;C#;Java;Pascal</answers>
+				<correctAnswer>2</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Java_(programming_language)</link>
+			</quest>    
+			<quest>     
+				<question>Procedure oriented Programs are called as: </question>
+				<answers>Structued Programming;Object Oriented Programming;Functional Programming;Non of the above</answers>
+				<correctAnswer>2</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Functional_programming</link>
+			</quest>  
+		</quiz>
+
+			<!--  		QUIZ 2-->
+
+
+		<quiz title="Basic Theory 2">
+			<quest>     
+				<question>2OOP stands for:</question>
+				<answers>2Object Oriented Programming ;Object Oriented Programming ;JAVA ;nothing</answers>
+				<correctAnswer>0</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Object-oriented_programming</link>
+			</quest>
+			<quest>     
+				<question>2Which is an OOP principle?</question>
+				<answers>Plagiarism;Inheritance;Development;Agile</answers>
+				<correctAnswer>1</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Object-oriented_programming</link>
+			</quest>
+			<quest>     
+				<question>2What is the native android programming language?</question>
+				<answers>C++;C#;Java;Pascal</answers>
+				<correctAnswer>2</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Java_(programming_language)</link>
+			</quest>     
+			<quest>     
+				<question>2OOP stands for:</question>
+				<answers>Object Oriented Programming ;Object Oriented Programming ;JAVA ;nothing</answers>
+				<correctAnswer>0</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Object-oriented_programming</link>
+			</quest>
+			<quest>     
+				<question>2Which is an OOP principle?</question>
+				<answers>Plagiarism;Inheritance;Development;Agile</answers>
+				<correctAnswer>1</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Object-oriented_programming</link>
+			</quest>
+			<quest>     
+				<question>2What is the native android programming language?</question>
+				<answers>C++;C#;Java;Pascal</answers>
+				<correctAnswer>2</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Java_(programming_language)</link>
+			</quest>
+			
+			<quest>     
+				<question>OOP stands for:</question>
+				<answers>Object Oriented Programming ;Object Oriented Programming ;JAVA ;nothing</answers>
+				<correctAnswer>0</correctAnswer>
+				<link>http://en.wikipedia.org/wiki/Object-oriented_programming</link>
+			</quest>
+		</quiz>
+		<quiz title="Objects vs Classes"></quiz>
+		<quiz title="OOP Principles"></quiz>
+		<quiz title="Encapsulation"></quiz>
+		<quiz title="Inheritance"></quiz>
+		<quiz title="Polymorphism"></quiz>
+		<quiz title="Abstraction"></quiz>
+		
+	</category>
+	<category title="Programming Languages">
+	</category>
+	<category title="C++">
+	    
+	</category>
+	<category title="Game Development">
+	    <quiz title="Unity"></quiz>
+	    <quiz title="Production"></quiz>
+	    <quiz title="APIs"></quiz>
+	    <quiz title="Facebook SDK"></quiz>
+	    <quiz title="Google API"></quiz>
+	    <quiz title="Flurry"></quiz>
+	</category>
+	<category title="Java">
+	    
+	</category>
+	<category title="C&#35;">
+	    
+	</category>
+	<category title="Unity">
+	    
+	</category>
+	<category title="Algorithms &#38; Data Structure">
+	    
+	</category>
+	<category title="Computer Graphics">
+	    
+	</category>
+	<category title="Logic">
+	    
+	</category>
+	<category title="Web">
+	    
+	</category>
+	<category title="Protocols">
+	    
+	</category>
+	<category title="History Programming">
+	    
+	</category>
+</data>
+
+
+

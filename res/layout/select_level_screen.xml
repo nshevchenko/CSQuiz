@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#E8E8E8"
+    android:weightSum="1.0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11" >
+
+    	<Button
+    	    android:id="@+id/title"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:layout_centerVertical="true"
+    	    android:layout_gravity="center_vertical"
+    	    android:layout_margin="5dp"
+    	    android:background="@drawable/slightly_round_corners"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:paddingLeft="30dp"
+    	    android:text="Select Category"
+    	    android:textSize="25sp" />
+
+    	<Button
+    	    android:id="@+id/back"
+    	    android:layout_width="45dp"
+    	    android:layout_height="45dp"
+    	    android:layout_centerVertical="true"
+    	    android:layout_margin="5dp"
+    	    android:layout_marginLeft="0dp"
+    	    android:background="@drawable/round_button"
+    	    android:gravity="center"
+    	    android:paddingLeft="0dp"
+    	    android:text="&lt;"
+    	    android:textSize="25sp" />
+
+    	</RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.9"
+	    android:orientation="horizontal" >
+
+		<GridView
+		    android:id="@+id/gridViewCategories"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_margin="10dp"
+		    android:fillViewport="true"
+		    android:horizontalSpacing="5dp"
+		    android:numColumns="3"
+		    android:stretchMode="columnWidth"
+		    android:verticalSpacing="5dp" >
+
+		</GridView>
+    	
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="level0">
+        <item>OOP stands for: ;Object Oriented Programming ;HTML ;JAVA ;nothing;0</item>
+        <item>Which is an OOP principle? ;Plagiarism;Inheritance;Development;Agile;1</item>
+        <item>What is the native android programming language?;C++;C#;Java;Pascal;2</item>
+        <item>A class is a:;representation of a type of object;object;variable;expression;1</item>
+        <item>Dynamic or Run time polymorphism is:;Method overriding;Inheritance;Compile error;Encapsulation;2</item>
+        <item>What is the native android programming language?;C++;C#;Java;Pascal;2</item>
+        
+    </string-array>
+    <string-array
+        name="level1">
+        <item>20..OOP stands for: ;Object Oriented Programming ;HTML ;JAVA ;nothing;0</item>
+        <item>21..Which is an OOP principle? ;Plagiarism;Inheritance;Development;Agile;1</item>
+        <item>22..What is the native android programming language?;C++;C#;Java;Pascal;2</item>
+        <item>23..What is the native android programming language?;C++;C#;Java;Pascal;2</item>
+    </string-array>
+    <string-array
+        name="level2">
+        <item>30..OOP stands for: ;Object Oriented Programming ;HTML ;JAVA ;nothing;0</item>
+        <item>31..Which is an OOP principle? ;Plagiarism;Inheritance;Development;Agile;1</item>
+        <item>32..What is the native android programming language?;C++;C#;Java;Pascal;2</item>
+        <item>33..What is the native android programming language?;C++;C#;Java;Pascal;2</item>
+    </string-array>
+</resources>
